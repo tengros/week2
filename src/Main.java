@@ -6,7 +6,9 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+//Lägger till en kommentar för att testa commitments i Git
 
+        // en till kommentar
         double totalSum, sum1, sum2, totalLetters;
         char choice;
         do {
