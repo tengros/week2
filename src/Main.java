@@ -51,11 +51,29 @@ public class Main {
                 }
 
                 case '4': {
+                    System.out.print("Skriv in talen du vill summera: ");
+                    String sumString = sc.nextLine();
+                    String stringSum = String.valueOf(sumDigits(sumString));
+                    System.out.println("Talen du skrev blir sammanlagt: " + stringSum);
 
                 }
             }
 
         } while (choice != 'e');
+    }
+
+    static int sumDigits(String input) {
+        int stringSum = 0;
+
+        for (int i = 0; i < input.length(); i++) {
+            char c = input.charAt(i);
+
+            if (Character.isDigit(c)) {
+                stringSum += Character.getNumericValue(c);
+
+            }
+        }
+        return stringSum;
     }
 
     static String reverseString(String input) {
